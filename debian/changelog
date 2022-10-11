@@ -1,0 +1,250 @@
+libpath-class-perl (0.37-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Import upstream version 0.37
+  * Update copyright years for debian/* packaging files
+  * Declare compliance with Debian policy 3.9.8
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 14 Aug 2016 06:52:41 +0200
+
+libpath-class-perl (0.36-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ Lucas Kanashiro ]
+  * Import upstream version 0.36
+  * Update years of upstream copyright
+  * Lowercase upstream email address
+  * Update Debian packaging copyright
+  * Fix d/control. Thanks for cme.
+  * Bump debhelper compatibility level to 9
+  * Declare compliance with Debian policy 3.9.7
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Wed, 17 Feb 2016 20:48:03 -0200
+
+libpath-class-perl (0.35-1) unstable; urgency=medium
+
+  * Add debian/upstream/metadata
+  * Imported upstream version 0.35
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 15 Sep 2014 20:44:36 +0200
+
+libpath-class-perl (0.34-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * Imported Upstream version 0.34
+  * Update copyright years for upstream files
+  * Update copyright years for debian/* packaging files
+  * Add explicit Build-Depends on libmodule-build-perl
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 29 Aug 2014 07:52:28 +0200
+
+libpath-class-perl (0.33-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.33
+  * Add versioned (build-)dependency on perl for Perl::OSType.
+    The module uses now Perl::OSType, which is present from Perl 5.13.9 on.
+    Add a versioned Build-Depends and Depends on perl (>= 5.13.9).
+  * Drop fix-spelling-error-in-manpage.patch patch
+  * Bump Standards-Version to 3.9.5
+  * Wrap and sort fields in debian/control file
+  * Remove redundant dependency for Perl.
+    Remove the alternative Build-Depends on perl (>= 5.11.4) or
+    libmodule-build-perl as it is covered already by the dependency on perl
+    (>= 5.13.9) for Perl::OSType usage.
+    Remove redundant Build-Depends-Indep on perl.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 14 Dec 2013 07:26:42 +0100
+
+libpath-class-perl (0.32-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.27, 0.28, 0.29, 0.31 and 0.32
+  * Bump Standards-Version to 3.9.4
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+  * Update debian/copyright file information.
+    Update copyright years for upstream files.
+    Update copyright years for debian/* packaging files.
+  * Add fix-spelling-error-in-manpage.patch patch.
+    Fix spelling error in manpage reported by lintian.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Tue, 14 May 2013 07:30:32 +0200
+
+libpath-class-perl (0.26-1) unstable; urgency=low
+
+  [ Alessandro Ghedini ]
+  * Email change: Alessandro Ghedini -> ghedo@debian.org
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 0.26
+  * Correct Build-Depends for Module::Build.
+    Update alternate Build-Depends for Module::Build to perl (>= 5.11.4) |
+    libmodule-build-perl (>= 0.360100).
+  * Update debian/copyright file.
+    Update format to copyright-format 1.0 as released together with Debian
+    policy 3.9.3.
+    Update copyright years for debian/* packaging files.
+  * Bump Standards-Version to 3.9.3
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Fri, 15 Jun 2012 07:00:45 +0200
+
+libpath-class-perl (0.25-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ Alessandro Ghedini ]
+  * New upstream release
+  * Bump upstream copyright year
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Fri, 17 Feb 2012 14:13:49 +0100
+
+libpath-class-perl (0.24-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself to Uploaders
+  * Bump Standards-Version to 3.9.2 (no changes needed)
+  * Move perl to B-D-I
+  * Add libmodule-build-perl to B-D
+  * Update upstream copyright year
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Tue, 31 May 2011 16:23:19 +0200
+
+libpath-class-perl (0.23-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Update my email address.
+
+  [ Salvatore Bonaccorso ]
+  * Update my email address.
+  * New upstream release
+  * debian/copyright: Refer to Debian systems in general instead of
+    Debian GNU/Linux systems.
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Mon, 27 Dec 2010 10:48:09 +0100
+
+libpath-class-perl (0.21-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop spelling.patch as it is applied upstream.
+  * debian/copyright: Refresh to revision 135 of DEP5 format-
+    specification for machine-readable copyright file. Explicitly point
+    to GPL-1 license text in common-licenses.
+  * debian/control:
+    - Drop alternate Build-Depends on perl (>= 5.10) | libmodule-build-perl
+      as stable has the required versions and oldstable is gone.
+    - Remove the Build-Depends-Indep field. perl Build-Depends already
+      satisfied.
+  * Use Debhelper compat level 8.
+  * debian/rules: Remove use of --buildsystem=perl_build as this is the
+    preferred buildsystem in debhelper compat level 8.
+  * Bump Standards-Version to 3.9.1.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Fri, 20 Aug 2010 08:20:04 +0200
+
+libpath-class-perl (0.19-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/copyright: Update years of copyright.
+  * Use Build.PL.
+  * Use source format 3.0 (quilt).
+  * Fix spelling errors in documentation.
+    + new patch: spelling.patch
+  * Bump Standards-Version to 3.8.4 (no changes).
+  * Add myself to Uploaders.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Mon, 07 Jun 2010 21:06:29 +0900
+
+libpath-class-perl (0.18-1) unstable; urgency=low
+
+  * New upstream release
+  * Add myself to Uploaders and Copyright
+  * Standards-Version 3.8.3 (drop perl version dep)
+  * Rewrite control description
+  * Refresh copyright information
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sun, 20 Dec 2009 20:46:35 -0500
+
+libpath-class-perl (0.17-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://lists.debian.org/debian-perl/2008/06/msg00039.html)
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Florian Ragwitz
+    <rafl@debian.org>); Florian Ragwitz <rafl@debian.org> moved to
+    Uploaders.
+  * Add debian/watch.
+  * Refresh debian/rules, no functional changes; except: don't create
+    .packlist file any more.
+  * Set debhelper compatibility level to 5.
+  * Set Standards-Version to 3.8.0 (no changes).
+  * debian/copyright: use author-independent upstream source URL and add years
+    of copyright.
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Ryan Niebur ]
+  * Remove Florian Ragwitz from Uploaders
+  * Close ITA (Closes: #523198)
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * New upstream release
+  * Add myself to Uploaders
+  * debian/control:
+    - Bump Standards-Version to 3.8.2.
+    - Build-Depends on debhelper (>= 7).
+    - Drop Build-Depends on libmodule-build-perl
+  * debian/rules: use tiny rules file and use Makefile.PL now.
+  * debian/compat: Set debhelper compatibility level to 7.
+  * debian/copyright: switch to new machine readable format.
+
+ -- Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>  Wed, 17 Jun 2009 22:15:32 +0200
+
+libpath-class-perl (0.16-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream release.
+
+ -- Bastian Blank <waldi@debian.org>  Mon, 07 May 2007 13:20:26 +0000
+
+libpath-class-perl (0.15-1) unstable; urgency=low
+
+  * New upstream release.
+  * Improved debian/copyright.
+  * Cleaned up debian/rules.
+  * Updated Maintainer field with my new mail address.
+
+ -- Florian Ragwitz <rafl@debian.org>  Fri, 27 Jan 2006 07:01:11 +0100
+
+libpath-class-perl (0.12-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Florian Ragwitz <florian@mookooh.org>  Mon, 30 May 2005 16:13:20 +0200
